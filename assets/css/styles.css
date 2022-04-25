@@ -1,14 +1,281 @@
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/OPTIFuturaDemiBold.otf");
+}
+
+   
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul, ol {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+.futura{
+    font-family: "Futura", sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.white {
+    color: #fff;
+}
+
+h1 {
+    padding:25px 0 15px 0;
+}
+
+h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    color: #062B51;
+}
+
+/*Header*/
 .main-header {
-    width: 100vw;
     height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.div-header-size {
+    width: auto;
+    height: 100%;
+}
+.text-content {
     background-image: url("../images/header/Fond.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:7;
+    padding-left: 125px;
+}
+
+.main-header .text-content .logo-header {
+    width: 120px;
+    height: auto;
+}
+
+.text-content h1 {
+    font-size: 75px;
+}
+
+.text-content p {
+    font-size: 18px;
+}
+
+form {
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+    padding: 50px 0;
+}
+
+.form {
+    background-color: white;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.input-mail {
+    width: 400px;
+    font-size: 18px;
+    border-radius: 100px 0 0 100px;
+    color: rgba(0, 0, 0, .46);
+}
+
+.input-button-mail {
+    margin-left: -4px;
+    border-radius: 0 100px 100px 0;
+    color: #062B51;
+    font-weight: 700;
+}
+
+.btn-image-store{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.img-content {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:3;
+}
+
+.mocup-size {
+    width: auto;
+    height: 120%;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 0;
+}
+
+#content-bottom-arrow{
+    display: flex;
+    justify-content: center;
+}
+#content-bottom-arrow a {
+    height: 50px;
+    position: absolute;
+    bottom: 3%;
+    animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+    0%   {bottom: 3%;}
+    50%  {bottom: 5%;}
+    100% {bottom: 3%;}
+}
+/*About Us*/
+
+.about-us-content {
+    margin: 0 125px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.text-about-us {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.text-content-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: inherit;
+}
+
+.text-padding-right-about-us {
+    padding-right: 110px;
+}
+
+.text-padding-left-about-us {
+    padding-left: 110px;
+}
+
+.img-about-us {
+    height: 100%;
+    width: 100%;
+}
+
+/*Questions*/
+#section-question {
+    padding: 115px 250px;
+    background-color: #062B51;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#question {
+    font-family: 'Futura', sans-serif;
+    font-size: 70px;
+    margin-bottom: 50px;
+    color: #FFF8F3;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+
+    background-color: #FFF8F3;
+
+    cursor: pointer;
+}
+
+.questions p {
+    padding-left: 20px;
+    color: #062B51;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.questions img {
+    padding-right: 20px;
+    height: 16px;
+}
+
+.social-icon-facebook {
+    background-image: url(../images/icons/facebook.svg);
+    height: 50px;
+}
+
+.social-icon-twitter {
+    background-image: url(../images/icons/twitter.svg);
+    height: 50px;
+}
+
+.social-icon-instagram {
+    background-image: url(../images/icons/instagram.svg);
+    height: 50px;
+}
+
+/*Footer*/
+
+footer {
+    padding: 100px 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #062B51;
+}
+
+.content-footer{
+    display: contents;
+}
+
+#slogan {
+    margin: 30px 0 70px 0;
+    font-size: 17px;
+    color: #062B51;
+    opacity: .5;
+}
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu a{
+    color: #062B51;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+#menu a:link{
+    color: #062B51;
+}
+
+#menu a:visited{
+    color: #062B51;
+}
+
+#network {
+    margin-top: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
