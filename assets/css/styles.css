@@ -288,6 +288,34 @@ form {
     padding: 50px 0;
 }
 
+.all-avis {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: start;
+    margin-top: 70px;
+    
+}
+
+.content-avis {
+    width: 90%;
+}
+
+.text-avis {
+    font-size: 24px;
+    
+}
+.star {
+    margin-bottom: 15px;
+}
+
+.checked {
+    color: #3ED899;
+}
+
+
+
+
+
 /*Downoad*/ 
 
 #section-download {
